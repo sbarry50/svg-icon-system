@@ -18,26 +18,32 @@ A system for inlining accessible SVG icons in WordPress themes.
 
 ## Installation
 
-1. Clone the directory into your `plugins` directory.
-2. Change into the cloned directory and execute `composer update` and `npm install`.
-3. In the WordPress dashboard, navigate to the *Plugins* page and locate the menu item that reads “SVG Icon System.”
-4. Click on *Activate.*
+1. In terminal (or console) navigate to your WordPress `plugins` directory.
+2. Run this command: `composer create-project sb2-media/svg-icon-system`.
+3. Change into the SVG Icon System directory: `cd svg-icon-system`.
+4. Run `npm install`.
+5. Run `npm run dev`.
+6. Run `composer dump-autoload -o`.
+7. In the WordPress dashboard, navigate to the *Plugins* page and locate the menu item that reads “SVG Icon System.”
+8. Click on *Activate.*
 
 ## Usage
 
 ### Icon Folder Storage
 
-You may choose to store your SVG icon files in this plugin or anywhere in your theme.
+You may choose to store your SVG icon files in this plugin or anywhere in your theme. The plugin will strip the files of all `<svg>`, `<title>` and `<desc>` tags and reconstruct them in adherence to accessibility standards and guidelines.
 
-By default SVG icons are stored in the `assets/icons` folder in this plugin and then copied over to `dist/icons` when the Laravel Mix build process is run. Store your SVG icons in the `assets/icons` and run the command `npm run dev` or `npm run production` in the plugin's root folder if you wish to utilize the default behavior.  
+#### Plugin
+
+By default SVG icons are stored in the `assets/icons` folder in this plugin and then copied over to `dist/icons` when the Laravel Mix build process is run. Store your SVG icons in the `assets/icons` and run the command `npm run dev` or `npm run production` in the plugin's root folder if you wish to utilize the default behavior. `npm run dev` or `npm run production` must be run after adding new SVG icon files to storage.
 
 The `assets/icons` directory contains a SVG icon file for demonstration purposes.
 
 * `icon_menu.svg`
 
-If you wish to store your SVG icon files in your theme, simply change the value of the `icon_folder_path` in `config/svg-icons.php` to the path where the files will be stored. A few examples are given in the comments.
+#### Theme
 
-The plugin will strip the files of all `<svg>`, `<title>` and `<desc>` tags and reconstruct them in adherence to accessibility standards and guidelines.
+If you wish to store your SVG icon files in your theme, simply change the value of the `icon_folder_path` in `config/svg-icons.php` to the path where the files will be stored. A few examples are given in the comments.
 
 ### Config
 
