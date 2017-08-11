@@ -62,7 +62,7 @@ A single config file `config/svg-icons.php` is used to declare and configure the
 #### Notes
 
 * The `filename` MUST match the name of the SVG icon file.
-* Standalone, meaningful icons should have a title and possibly a description set in their configuration. If a title (and description) is declared, the plugin will render the SVG icon with the `aria-labelledby=` attribute to link the title (and description) to their respective `<title>` (and `<desc>`) elements with an unique ID.
+* Standalone, meaningful icons should have a title and possibly a description set in their configuration. If a title (and description) is declared, the plugin will render the SVG icon with the `aria-labelledby=` attribute with a unique ID to link the title (and description) to their respective `<title>` (and `<desc>`) elements.
 * Purely decorative icons do not need a title and description. Leave them blank in the config and the `aria-hidden="true"` attribute will be added to the `<svg>` element instead.
 * Either `width` and `height` or `viewbox_width` and `viewbox_height` attributes MUST be set in the config. If only a `width` and `height` are declared, `viewbox_width` and `viewbox_height` will inherit their values. If only `viewbox_width` and `viewbox_height` values are set, `width` and `height` attributes will not be added to the `<svg>` element.
 * The `preservedAspectRatio` and `style` attributes are optional.
@@ -135,9 +135,7 @@ Output:
 
 ### Function
 
-Icons defined in the config can be placed anywhere in your WordPress theme templates with the `get_svg_icon( $icon_id )` function call.
-
-To implement the menu icon example:
+Icons defined in the config can be placed anywhere in your WordPress templates with the `get_svg_icon( $icon_id )` function call.
 
 ```
 <button class="menu-toggle">
