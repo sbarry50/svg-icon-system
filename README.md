@@ -29,7 +29,7 @@ A system for inlining accessible SVG icons in WordPress themes.
 
 You may choose to store your SVG icon files in this plugin or anywhere in your theme.
 
-By default SVG icons are stored in the `assets/icons` folder in this plugin and then copied over to `dist/icons` when the Laravel Mix build process is run. Store your SVG icons in the `assets/icons` and run the command `npm run dev` in the plugin's root folder if you wish to utilize the default behavior.  
+By default SVG icons are stored in the `assets/icons` folder in this plugin and then copied over to `dist/icons` when the Laravel Mix build process is run. Store your SVG icons in the `assets/icons` and run the command `npm run dev` or `npm run production` in the plugin's root folder if you wish to utilize the default behavior.  
 
 The `assets/icons` directory contains a SVG icon file for demonstration purposes.
 
