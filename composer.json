@@ -1,0 +1,42 @@
+{
+    "name": "sb2-media/svg-icon-system",
+    "description": "A system for inlining accesible SVG icons in WordPress themes",
+    "type": "wordpress-plugin",
+    "keywords": ["wordpress", "plugin"],
+    "homepage": "https://github.com/sbarry50/svg-icon-system",
+    "license": "GPL-2.0+",
+    "authors": [
+      {
+          "name": "Steve Barry",
+          "email": "sbarry50@gmail.com",
+          "homepage": "http://sb2media.com/"
+      }
+    ],
+    "support": {
+        "issues": "https://github.com/sbarry50/svg-icon-system",
+        "source": "https://github.com/sbarry50/svg-icon-system"
+    },
+    "autoload": {
+        "psr-4": {
+            "SB2Media\\SVGIconSystem\\": "src/"
+        },
+        "classmap": [
+        ],
+        "files": [
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SB2Media\\Tests\\SVGIconSystem\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "composer/installers": "~1.0",
+        "paragonie/random_compat": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*@stable"
+    },
+    "suggest": {}
+}
