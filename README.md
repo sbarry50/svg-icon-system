@@ -161,6 +161,6 @@ SVG Icon System is licensed under the GPL v2 or later.
 
 A copy of the license is included in the root of the plugin’s directory. The file is named `LICENSE`.
 
-# Credits
+## Credits
 
 Portions of this plugin uses code and concepts adapted from [Carl Alexander](https://carlalexander.ca/) and Tonya Mork's [Fulcrum plugin](https://github.com/hellofromtonya/Fulcrum).
