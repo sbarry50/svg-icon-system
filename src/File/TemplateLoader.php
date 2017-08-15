@@ -2,8 +2,7 @@
 /**
  * Class that loads templates and views.
  *
- * @package    Plugin
- * @subpackage Plugin/src
+ * @package    SB2Media\SVGIconSystem\File
  * @since      1.0.0
  * @author     sbarry
  * @link       http://example.com

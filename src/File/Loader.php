@@ -45,7 +45,7 @@ class Loader
 
         ob_start();
 
-        $this->file;
+        include $this->file;
 
         return ob_get_clean();
     }
