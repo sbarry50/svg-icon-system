@@ -18,7 +18,7 @@ A system for inlining accessible SVG icons in WordPress themes.
 
 ## Installation
 
-1. In terminal (or console) navigate to your WordPress `plugins` directory.
+1. From the command line navigate to your WordPress `plugins` directory.
 2. Run this command: `composer create-project sb2-media/svg-icon-system`.
 3. Change into the SVG Icon System directory: `cd svg-icon-system`.
 4. Run `npm install`.

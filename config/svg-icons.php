@@ -63,4 +63,18 @@ return [
         'preserve_aspect_ratio' => '',
         'style'                 => '',
     ],
+    'logo' =>   [
+        'filename'              => 'bg_logo_classic',
+        'title'                 => 'Barry\'s Gravely Tractors Logo',
+        'desc'                  => 'Classic logo for Barry\'s Gravely Tractors',
+        'viewbox_x'             => '0',
+        'viewbox_y'             => '0',
+        'viewbox_width'         => '498',
+        'viewbox_height'        => '100',
+        'width'                 => '498',
+        'height'                => '100',
+        'preserve_aspect_ratio' => '',
+        'style'                 => '',
+    ],
+
 ];
