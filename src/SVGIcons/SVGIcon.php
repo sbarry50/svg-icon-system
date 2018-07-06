@@ -139,6 +139,7 @@ class SVGIcon
             'width'                 => '',
             'height'                => '',
             'preserve_aspect_ratio' => '',
+            'class'                 => '',
             'style'                 => '',
     	);
     }

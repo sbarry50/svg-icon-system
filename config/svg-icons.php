@@ -47,6 +47,7 @@ return [
     *       'width'                 => $value,  // Optional, viewbox_width must be set if left blank
     *       'height'                => $value,  // Optional, viewbox_height must be set if left blank
     *       'preserve_aspect_ratio' => $value,  // Optional
+    *       'class'                 => $value,  // Optional, custom classes to add
     *       'style'                 => $value,  // Optional
     *    ],
     ********************************************************/
@@ -61,6 +62,7 @@ return [
         'width'                 => '20',
         'height'                => '16',
         'preserve_aspect_ratio' => '',
+        'class'                 => '',
         'style'                 => '',
     ],
 ];

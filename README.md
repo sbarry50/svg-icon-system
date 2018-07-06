@@ -61,6 +61,7 @@ A single config file `config/svg-icons.php` is used to declare and configure the
         'width'                 => $value,  // Optional, viewbox_width must be set if left blank
         'height'                => $value,  // Optional, viewbox_height must be set if left blank
         'preserve_aspect_ratio' => $value,  // Optional
+        'class' => $value,  // Optional, custom classes to add
         'style'                 => $value,  // Optional
     ],
 ```
@@ -98,6 +99,7 @@ Config with the bare minimum set:
         'width'                 => '',
         'height'                => '',
         'preserve_aspect_ratio' => '',
+        'class' => '',
         'style'                 => '',
     ],
 ```
@@ -124,13 +126,14 @@ Config with all attributes set:
         'width'                 => '20',
         'height'                => '16',
         'preserve_aspect_ratio' => 'xMinYMin',
+        'class'                 => 'custom-class',
         'style'                 => 'color: red;',
     ],
 ```
 
 Output:
 ```
-<svg class="icon icon-menu" aria-labelledby="title-nYY desc-nYY" width="20" height="16" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin" style="color: red;" role="img">
+<svg class="icon icon-menu custom-class" aria-labelledby="title-nYY desc-nYY" width="20" height="16" viewBox="0 0 20 16" preserveAspectRatio="xMinYMin" style="color: red;" role="img">
     <title id="title-nYY">Menu icon</title>
     <desc id="desc-nYY">Three equal width horizontal bars stacked on top of one another to symbolize a menu</desc>    
     <rect x="0.016" y="6.41" width="19.969" height="3.18" style="fill: rgb(51, 51, 51);"></rect>
