@@ -3,7 +3,7 @@
 namespace SB2Media\SVGIconSystem;
 ?>
 
-<svg class="icon icon-<?php echo $this->icon->icon_id . ' ' . $this->config['class']; ?>"
+<svg class="icon icon-<?php echo $this->icon->icon_id . ' ' . $this->icon->config['class']; ?>"
     <?= $this->icon->config['aria']; ?>
     <?php if( $this->icon->config['width'] && $this->icon->config['height'] ) : ?>
         width="<?= $this->icon->config['width']; ?>" height="<?= $this->icon->config['height']; ?>"

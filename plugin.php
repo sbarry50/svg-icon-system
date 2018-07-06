@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              http://example.com
- * @since             1.0.0
+ * @since             1.1.0
  * @package           Plugin
  *
  * @wordpress-plugin
  * Plugin Name:       SVG Icon System
  * Plugin URI:        https://github.com/sbarry50/svg-icon-system.git
  * Description:       A system for inlining accesible SVG icons in WordPress themes.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            sbarry
  * Author URI:        http://sb2media.com/
  * License:           GPL-2.0+
